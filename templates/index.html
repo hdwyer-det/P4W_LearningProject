@@ -1,11 +1,9 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SW Engineering 2026 Web App</title>
-  </head>
-  <body>
-    <h1>Hello, 11SE1!!!</h1>
-  </body>
-</html>
+{% extends 'layout.html' %} {% block content %} {% if logged_in %}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>You are logged in!</h1>
+    </div>
+  </div>
+</div>
+{% else %} {% include "partials/login_form.html" %} {% endif %} {% endblock %}
