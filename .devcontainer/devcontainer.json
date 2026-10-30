@@ -19,9 +19,7 @@
         "editor.formatOnSave": true,
         "editor.fontSize": 18,
         "extensions.ignoreRecommendations": true,
-        "unwantedRecommendations": [
-          "ms-python.vscode-python-envs"
-        ],
+        "unwantedRecommendations": ["ms-python.vscode-python-envs"],
         "terminal.integrated.defaultProfile.windows": "Git Bash",
         "window.restoreWindows": "preserve",
         "workbench.editorAssociations": {
@@ -47,7 +45,6 @@
         "mechatroner.rainbow-csv",
         "ms-python.black-formatter",
         "ms-python.debugpy",
-        "ms-python.pylint",
         "ms-python.python",
         "oderwat.indent-rainbow",
         "streetsidesoftware.code-spell-checker",
@@ -55,14 +52,11 @@
         "yusifaliyevpro.vscicons",
         "saeris.markdown-github-alerts",
         "yy0931.vscode-sqlite3-editor",
-        "github.copilot",
-        "usernamehw.errorlens"
+        "github.copilot"
       ]
     }
   },
-  "forwardPorts": [
-    5000
-  ], // Add the port your Flask app runs on, or others as needed
+  "forwardPorts": [5000], // Add the port your Flask app runs on, or others as needed
   "portsAttributes": {
     "5000": {
       "label": "Flask App",
