@@ -37,6 +37,16 @@ def index_page():
     return render_template("index.html", logged_in=is_logged_in), 200
 
 
+# Define the route for the parameters page
+@app.route("/parameters.html", methods=["GET"])
+def parameters_page():
+    # Access the request object to get the value of the URL parameter
+    # If the URL parameter isn't in the URL string, then set the value to "default"
+    pageVer = request.args.get("ver", "default")
+
+    return render_template("parameters.html", pageVersion=pageVer), 200
+
+
 # Initialise the Flask application
 if __name__ == "__main__":
     app.run(debug=True)
