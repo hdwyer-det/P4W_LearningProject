@@ -47,6 +47,13 @@ def parameters_page():
     return render_template("parameters.html", pageVersion=pageVer), 200
 
 
+# Define the route for the products page
+@app.route("/products.html", methods=["GET"])
+def product_page():
+    data = database_interface.listExtension()
+    return render_template("products.html", content=data), 200
+
+
 # Initialise the Flask application
 if __name__ == "__main__":
     app.run(debug=True)
