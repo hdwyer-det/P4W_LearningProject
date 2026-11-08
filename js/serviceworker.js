@@ -1,6 +1,7 @@
 const assets = [
   "/",
   "static/css/style.css",
+  "static/js/app.js",
   "static/images/logo.png",
   "static/images/favicon.png",
   "static/icons/icon-128x128.png",
